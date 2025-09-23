@@ -18,7 +18,7 @@ def cifrar(texto, grupo, permutacion):
         bloque = texto[i:i+grupo]
         nuevo = "".join(bloque[permutacion[j]-1] for j in range(grupo))
         bloques.append(nuevo)
-    return " ".join(bloques)
+    return "".join(bloques)
 
 def ejecutar_cifrado():
     texto = entrada_texto.get("1.0", tk.END).strip()
